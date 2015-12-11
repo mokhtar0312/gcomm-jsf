@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+	<title><ui:insert name="title"></ui:insert></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords"
+			content="Game Spot Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+	<h:outputStylesheet library="css" name="css/bootstrap.css" />
+	<h:outputStylesheet library="css" name="css/style.css" />
+	<h:outputStylesheet library="css" name="css/lightbox.css" />
+
+
+	<h:outputScript library="javascript" name="js/jquery-1.11.1.min.js">addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </h:outputScript>
+	<h:outputScript library="javascript"></h:outputScript>
+	<h:link
+		href='@Url.Content("~/Content/mytemplate/")//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800|Titillium+Web:400,600,700,300'
+		rel='stylesheet' type='text/css'></h:link>
+</h:head>
+<body>
+	<ui:include src="/template/header.xhtml" />
+
+
+	<div class="banner">
+        <div class="container">
+            <div class="headr-right">
+                
+                <div class="details">
+                    <ul>
+                        <li></li>
+                        @*<li><a href="mailto:@example.com"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>info(at)example.com</a></li>*@
+                        <li><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>@Html.Partial("_LoginPartial")</li>
+                    </ul>
+                   
+                </div>
+            </div>
+            <div class="banner_head_top">
+                <div class="logo">
+                    <h1><img src="images/logogcom.png" class="img-responsive" alt="" /></h1>
+                </div>
+                
+                <div class="top-menu">
+                    
+                    <div class="content white">
+                        <nav class="navbar navbar-default">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            @*lkj*@
+                            <!--/navbar header-->
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav">
+                                  
+                                    <li><a href="#">Stream</a></li>
+                                      <li><a href="#">About</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div>
+                            <!--/navbar collapse-->
+                        </nav>
+                        <!--/navbar-->
+                    </div>
+                    <div class="clearfix"></div>
+                    <script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="banner-info">
+                <h3>Welcome to our Website</h3>
+                <h2>G-Community</h2>
+            </div>
+            <div class="social">
+                <ul>
+                    <li><a href="#"><span class="fa"> </span></a></li>
+                    <li><a href="#"><span class="tw"> </span></a></li>
+                    <li><a href="#"><span class="g"> </span></a></li>
+                    <li><a href="#"><span class="in"> </span></a></li>
+                    <li><a href="#"><span class="pin"> </span></a></li>
+                </ul>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+
+		<div class="fix main_content_area">
+			<div class="main_menu">
+				<!-- zone d'insertion du contenu des pages xhtml -->
+				<ui:insert name="pageContent"></ui:insert>
+			</div>
+		</div>
+	
+
+	<ui:include src="/template/footer.xhtml" />
+</body>
+</html>
